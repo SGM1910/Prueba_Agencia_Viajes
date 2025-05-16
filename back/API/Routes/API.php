@@ -6,6 +6,7 @@ $seccion = $_GET["seccion"];
 if ($requestMethod == "GET") {
 
     if ($seccion == "destinos") {
+        
         obtenerDestinos();
 }}
 ?>

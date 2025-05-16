@@ -5,8 +5,8 @@ async function obtenerDestinos() {
     
         const respuesta = await fetch("../backend/routes/api.php?seccion=destino"); //este valor no puede ser modificado, por eso constante y no variable
    
-        const libros = await respuesta.json(); //convierte la respuesta q le pdio al seridor a un json
-console.log(libros)
+        const destinos = await respuesta.json(); //convierte la respuesta q le pdio al seridor a un json
+console.log(destinos)
         const contenedorDestinos = document.getElementById("card-container"); 
         contenedorDestinos.innerHTML = mostrarDestinos(destinos);
     } catch (error) {
@@ -37,5 +37,5 @@ console.log(destinos);
     return contenido;
 }
 //llama a la funcion para obtener y mostrar los libros al cargar la pagina 
-obtenerLibros();//cuando se ejecuta el js llama a esta funcion
+obtenerDestinos();//cuando se ejecuta el js llama a esta funcion
 

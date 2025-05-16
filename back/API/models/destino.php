@@ -21,5 +21,7 @@ class Destino {
         
         // Devuelve todos los resultados como un array asociativo
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }}
+    }
+}
+
     ?>
